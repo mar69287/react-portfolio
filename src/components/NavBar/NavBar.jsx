@@ -29,7 +29,7 @@ export default function NavBar() {
                 <li><a href="#projects" >Projects</a></li>
                 <li><a href="#about" >About Me</a></li>
                 <li><a href="#" >Resume</a></li>
-                <li><a href="#contact" >Contact Me</a></li>
+                <li><a href="#contact" >Contact</a></li>
             </ul>
             <a class="hamburger-icon">
                 <i class="fa fa-bars"></i>
