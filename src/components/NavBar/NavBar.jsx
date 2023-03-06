@@ -1,5 +1,6 @@
-import logo from '../../images/logo.png'
+import logo from '../../assets/logo.png'
 import { useEffect } from 'react'
+import resume from '../../assets/resume.pdf'
 
 export default function NavBar() {
 
@@ -28,7 +29,7 @@ export default function NavBar() {
                 <li><a href="#" >Home</a></li>
                 <li><a href="#projects" >Projects</a></li>
                 <li><a href="#about" >About Me</a></li>
-                <li><a href="#" >Resume</a></li>
+                <li><a href={resume} target='_blank'>Resume</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
             <a class="hamburger-icon">

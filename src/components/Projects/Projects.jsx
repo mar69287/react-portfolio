@@ -1,6 +1,6 @@
-import code from '../../images/code-profile.jpg'
-import little from '../../images/little-learners.jpg'
-import poker from '../../images/texas-poker.jpg'
+import code from '../../assets/code-profile.jpg'
+import little from '../../assets/little-learners.jpg'
+import poker from '../../assets/texas-poker.jpg'
 
 export default function Projects() {
     return (
