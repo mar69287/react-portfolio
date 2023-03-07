@@ -32,8 +32,8 @@ export default function NavBar() {
                 <li><a href={resume} target='_blank'>Resume</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
-            <a class="hamburger-icon">
-                <i class="fa fa-bars"></i>
+            <a className="hamburger-icon">
+                <i className="fa fa-bars"></i>
             </a>
         </nav>
     )

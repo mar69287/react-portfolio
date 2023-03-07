@@ -5,6 +5,33 @@ import 'aos/dist/aos.css';
 
 export default function Header() {
     const form = useRef();
+    const formRef = useRef(null);
+    const footer = document.querySelector('#scroll');
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // console.log('Form is on the screen')
+                    footer.style.display = 'none'
+
+                } else {
+                    // console.log('Form is not on the screen');
+                    footer.style.display = 'flex'
+                }
+            });
+        });
+
+        if (formRef.current) {
+            observer.observe(formRef.current);
+        }
+
+        return () => {
+            if (formRef.current) {
+                observer.unobserve(formRef.current);
+            }
+        };
+    }, [formRef]);
 
 
     const sendEmail = (e) => {
@@ -36,7 +63,7 @@ export default function Header() {
                     <input type="text" id="name" name="name" placeholder="Name" required />
                     <input type="text" id="email" name="email" placeholder="Email" required />
                     <textarea id="message" name="message" placeholder="Message" required></textarea>
-                    <button>Send</button>
+                    <button ref={formRef}>Send</button>
                 </form>
 
             </div>
