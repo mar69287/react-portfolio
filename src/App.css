@@ -856,7 +856,7 @@ nav {
     }
 
     #top .demo {
-        font-size: .5rem;
+        font-size: 1.3rem;
         width: 6rem;
     }
 
@@ -874,7 +874,7 @@ nav {
     #top .demo {
         width: 6rem;
         letter-spacing: 0;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .content {
