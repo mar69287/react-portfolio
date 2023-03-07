@@ -1,12 +1,19 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import code from '../../assets/code-profile.jpg'
 import little from '../../assets/little-learners.jpg'
 import poker from '../../assets/texas-poker.jpg'
 
 export default function Projects() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <section id="projects">
-            <h2 className="titles">Projects</h2>
-            <div className="project-content">
+            <h2 data-aos='fade-up' className="titles">Projects</h2>
+            <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
                     <img src={code} alt="Project Image" />
                 </div>
@@ -32,7 +39,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <div className="project-content">
+            <div data-aos='fade-up' className="project-content">
                 <div style={{ position: 'relative' }} className="project-details flex-column-left">
                     <h2>Little Learners</h2>
                     <div>
@@ -57,7 +64,7 @@ export default function Projects() {
                     <img src={little} alt="Project Image" />
                 </div>
             </div >
-            <div className="project-content">
+            <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
                     <img src={poker} alt="Project Image" />
                 </div>
