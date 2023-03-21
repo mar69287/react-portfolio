@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import code from '../../assets/code-profile.jpg'
 import little from '../../assets/little-learners.jpg'
 import poker from '../../assets/texas-poker.jpg'
+import insight from '../../assets/insight-home.jpg'
 
 export default function Projects() {
     useEffect(() => {
@@ -13,6 +14,34 @@ export default function Projects() {
     return (
         <section id="projects">
             <h2 data-aos='fade-up' className="titles">Projects</h2>
+            <div data-aos='fade-up' className="project-content">
+                <div style={{ position: 'relative' }} className="project-details flex-column-left">
+                    <h2>InSight</h2>
+                    <div>
+                        <p className="project-description left-align">A company management app, offers streamlined tracking and analysis of business metrics for multiple companies, with a user-friendly interface for optimized performance. Manage multiple companies' sales, revenue, orders, inventory, and employee data with ease.</p>
+                    </div>
+                    <div>
+                        <ul className="flex-row-start">
+                            <li>React</li>
+                            <li>MongoDB</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Stripe API</li>
+                            <li>Nivo</li>
+                            <li>Full Calendar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className="flex-row-start">
+                            <li><a href="https://github.com/mar69287/InSight" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                            <li><a className="demo" href="https://insight-official.herokuapp.com/" target="_blank">Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="project-image">
+                    <img src={insight} alt="Project Image" />
+                </div>
+            </div >
             <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
                     <img src={code} alt="Project Image" />
@@ -29,6 +58,8 @@ export default function Projects() {
                             <li>OAuth</li>
                             <li>MongoDB</li>
                             <li>Heroku</li>
+                            <li>News Api</li>
+                            <li>Kontests Api</li>
                         </ul>
                     </div>
                     <div>
