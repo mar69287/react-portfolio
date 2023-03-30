@@ -10,6 +10,7 @@ export default function NavBar() {
 
         hamburgerIcon.addEventListener('click', () => {
             navUl.classList.toggle('active');
+            console.log('clicked')
         });
 
         let navLinks = document.querySelectorAll('.nav-ul li a');

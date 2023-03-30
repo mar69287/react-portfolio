@@ -694,6 +694,11 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
+
+    .project-details>div:last-of-type{
+        margin-bottom: 1rem;
+    }
+
     #top h1:first-of-type {
         font-size: 5.29rem;
     }
@@ -806,6 +811,7 @@ nav {
     }
 
     #projects>div:nth-of-type(2),
+    #projects>div:nth-of-type(4),
     #about-me {
         flex-direction: column-reverse;
     }
