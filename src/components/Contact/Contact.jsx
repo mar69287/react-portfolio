@@ -11,21 +11,22 @@ export default function Header() {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
+                const footer = document.querySelector('#scroll');
                 if (entry.isIntersecting) {
                     // console.log('Form is on the screen')
                     footer.style.display = 'none'
-
+    
                 } else {
                     // console.log('Form is not on the screen');
                     footer.style.display = 'flex'
                 }
             });
         });
-
+    
         if (formRef.current) {
             observer.observe(formRef.current);
         }
-
+    
         return () => {
             if (formRef.current) {
                 observer.unobserve(formRef.current);

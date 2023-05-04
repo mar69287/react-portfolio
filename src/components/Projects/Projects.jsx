@@ -5,6 +5,7 @@ import code from '../../assets/code-profile.jpg'
 import little from '../../assets/little-learners.jpg'
 import poker from '../../assets/texas-poker.jpg'
 import insight from '../../assets/insight-home.jpg'
+import zencart from '../../assets/zencart.jpg'
 
 export default function Projects() {
     useEffect(() => {
@@ -14,6 +15,36 @@ export default function Projects() {
     return (
         <section id="projects">
             <h2 data-aos='fade-up' className="titles">Projects</h2>
+            <div data-aos='fade-up' className="project-content">
+                <div className="project-image">
+                    <img src={zencart} alt="E-commerce" />
+                </div>
+                <div className="project-details flex-column-right">
+                    <h2>ZenCart</h2>
+                    <div>
+                        <p className="project-description right-align">ZenCart is an online store that allows buyers to login, browse through multiple categories of products, pick out items, add them to a cart, and ensure secure payment processing.</p>
+                        <br/>
+                        <p className="project-description right-align">Demo account and card information provided in the application.</p>
+                    </div>
+                    <div>
+                        <ul className="flex-row-end">
+                            <li>MongoDB</li>
+                            <li>Express</li>
+                            <li>React</li>
+                            <li>Node</li>
+                            <li>JWT</li>
+                            <li>Chakra-UI</li>
+                            <li>Fake Store Api</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className="flex-row-end">
+                            <li><a className="demo" href="https://zen-cart.herokuapp.com/" target="_blank">Demo</a></li>
+                            <li><a href="https://github.com/mar69287/ZenCart" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div data-aos='fade-up' className="project-content">
                 <div style={{ position: 'relative' }} className="project-details flex-column-left">
                     <h2>InSight</h2>
@@ -95,7 +126,7 @@ export default function Projects() {
                     <img src={little} alt="Project Image" />
                 </div>
             </div >
-            <div data-aos='fade-up' className="project-content">
+            {/* <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
                     <img src={poker} alt="Project Image" />
                 </div>
@@ -118,7 +149,7 @@ export default function Projects() {
                         </ul>
                     </div>
                 </div>
-            </div >
+            </div > */}
         </section >
     )
 }
