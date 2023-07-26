@@ -5,6 +5,11 @@ body {
     background-color: rgb(38, 38, 38);
 }
 
+.App {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {

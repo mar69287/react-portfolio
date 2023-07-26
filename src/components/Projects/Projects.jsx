@@ -3,9 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import code from '../../assets/code-profile.jpg'
 import little from '../../assets/little-learners.jpg'
-import poker from '../../assets/texas-poker.jpg'
 import insight from '../../assets/insight-home.jpg'
-import zencart from '../../assets/zencart.jpg'
+import tiendamaya from '../../assets/tienda-maya.jpg'
 
 export default function Projects() {
     useEffect(() => {
@@ -17,12 +16,12 @@ export default function Projects() {
             <h2 data-aos='fade-up' className="titles">Projects</h2>
             <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
-                    <img src={zencart} alt="E-commerce" />
+                    <img src={tiendamaya} alt="E-commerce" />
                 </div>
                 <div className="project-details flex-column-right">
-                    <h2>ZenCart</h2>
+                    <h2>Tienda Maya</h2>
                     <div>
-                        <p className="project-description right-align">ZenCart is an online store that allows buyers to login, browse through multiple categories of products, pick out items, add them to a cart, and ensure secure payment processing.</p>
+                        <p className="project-description right-align">Tienda Maya is an online marketplace that brings together my Guatemalan culture with modern tastes and trends. It allows buyers to login, browse through multiple categories of products, pick out items, add them to a cart, and ensure secure payment processing.</p>
                         <br/>
                         <p className="project-description right-align">Demo account and card information provided in the application.</p>
                     </div>
@@ -34,7 +33,7 @@ export default function Projects() {
                             <li>Node</li>
                             <li>JWT</li>
                             <li>Chakra-UI</li>
-                            <li>Fake Store Api</li>
+                            <li>Stipe API</li>
                         </ul>
                     </div>
                     <div>
