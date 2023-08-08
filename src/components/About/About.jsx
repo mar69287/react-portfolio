@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import animationPerson from '../../lottie-files/about.json'
-import { useEffect } from "react";
+import { useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaWrench, FaCode, FaHtml5 } from 'react-icons/fa';
@@ -24,54 +24,54 @@ export default function Header() {
             </section>
             <section data-aos="fade-up" className="flex-center" id="tools">
                 
-                    <h2>My Skills</h2>
+                <h2>My Skills</h2>
                 
-                <div className="tech-container">
-                    <div className="tech-card">
-                        <div className="tech-header">
-                            <div className="tech-icon"><FaHtml5 /></div>
-                            <h3>Front End</h3>
+                    <div className="tech-container">
+                        <div className="tech-card">
+                            <div className="tech-header">
+                                <div className="tech-icon"><FaHtml5 /></div>
+                                <h3>Front End</h3>
+                            </div>
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Chakra-Ui</li>
+                                <li>Material-UI</li>
+                                <li>Bootstrap</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Chakra-Ui</li>
-                            <li>Material-UI</li>
-                            <li>Bootstrap</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div className="tech-card">
-                        <div className="tech-header">
-                            <div className="tech-icon"><FaCode /></div>
-                            <h3>Back End</h3>
+                        <div className="tech-card">
+                            <div className="tech-header">
+                                <div className="tech-icon"><FaCode /></div>
+                                <h3>Back End</h3>
+                            </div>
+                            <ul>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Express</li>
-                            <li>Node</li>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div className="tech-card">
-                        <div className="tech-header">
-                            <div className="tech-icon"><FaWrench /></div>
-                            <h3>Other</h3>
+                        <div className="tech-card">
+                            <div className="tech-header">
+                                <div className="tech-icon"><FaWrench /></div>
+                                <h3>Other</h3>
+                            </div>
+                            <ul>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>ROS</li>
+                                <li>Arduino</li>
+                                <li>MATLAB</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>Git</li>
-                            <li>Github</li>
-                            <li>ROS</li>
-                            <li>Arduino</li>
-                            <li>MATLAB</li>
-                            <li>Visual Studio Code</li>
-                        </ul>
                     </div>
-                </div>
             </section>
         </section>
     )

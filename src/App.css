@@ -631,6 +631,10 @@ nav {
     }
 }
 
+img {
+    object-fit: cover;
+}
+
 @media screen and (max-width: 1000px) {
 
     #top h1:first-of-type {
@@ -678,6 +682,7 @@ nav {
     #my-lottie {
         width: 350px;
     }
+
 }
 
 @media screen and (max-width: 813px) {
