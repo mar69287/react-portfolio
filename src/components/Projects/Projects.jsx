@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import code from '../../assets/code-profile.jpg'
 import little from '../../assets/little-learners.jpg'
 import insight from '../../assets/insight-home.jpg'
 import tiendamaya from '../../assets/tienda-maya.jpg'
@@ -14,6 +13,34 @@ export default function Projects() {
     return (
         <section id="projects">
             <h2 data-aos='fade-up' className="titles">Projects</h2>
+            <div data-aos='fade-up' className="project-content">
+                <div style={{ position: 'relative' }} className="project-details flex-column-left">
+                    <h2>DevConnect</h2>
+                    <div>
+                        <p className="project-description left-align">Struggling to break into tech?</p>
+                        <p className="project-description left-align">This social media app is your go-to platform for developers seeking collaboration, knowledge sharing, and networking opportunities. It fosters innovation and career growth within the software development community, providing a vibrant hub for like-minded individuals to connect and thrive.</p>
+                    </div>
+                    <div>
+                        <ul className="flex-row-start">
+                            <li>React</li>
+                            <li>MongoDB</li>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Chat Engine</li>
+                            <li>Chakra UI</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className="flex-row-start">
+                            <li><a href="https://github.com/mar69287/InSight" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                            <li><a className="demo" href="https://insight-official.herokuapp.com/" target="_blank">Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="project-image">
+                    <img src={insight} alt="Project Image" />
+                </div>
+            </div >
             <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
                     <img src={tiendamaya} alt="E-commerce" />
@@ -74,40 +101,15 @@ export default function Projects() {
             </div >
             <div data-aos='fade-up' className="project-content">
                 <div className="project-image">
-                    <img src={code} alt="Project Image" />
+                    <img src={little} alt="Project Image" />
                 </div>
-                <div className="project-details flex-column-right">
-                    <h2>Code Universe</h2>
-                    <div>
-                        <p className="project-description right-align">This social media application provides a collaborative and inclusive platform for developers to connect, share knowledge, and work together on projects and competitions, ultimately promoting innovation and productivity in the field of software development, while providing opportunities for networking, learning, and career advancement.</p>
-                    </div>
-                    <div>
-                        <ul className="flex-row-end">
-                            <li>Node</li>
-                            <li>Express</li>
-                            <li>OAuth</li>
-                            <li>MongoDB</li>
-                            <li>Heroku</li>
-                            <li>News Api</li>
-                            <li>Kontests Api</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul className="flex-row-end">
-                            <li><a className="demo" href="https://code-universe.herokuapp.com/" target="_blank">Demo</a></li>
-                            <li><a href="https://github.com/mar69287/Code-Universe" target="_blank"><i className="fa-brands fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div data-aos='fade-up' className="project-content">
-                <div style={{ position: 'relative' }} className="project-details flex-column-left">
+                <div style={{ position: 'relative' }} className="project-details flex-column-right">
                     <h2>Little Learners</h2>
                     <div>
-                        <p className="project-description left-align">Collaborated with a team of three to develop a web-based student management application for preschools that enables efficient and transparent communication between teachers and guardians, while providing data-driven insights to support student success.</p>
+                        <p className="project-description right-align">Collaborated with a team of three to develop a web-based student management application for preschools that enables efficient and transparent communication between teachers and guardians, while providing data-driven insights to support student success.</p>
                     </div>
                     <div>
-                        <ul className="flex-row-start">
+                        <ul className="flex-row-end">
                             <li>Heroku</li>
                             <li>Python</li>
                             <li>PostrgreSQL</li>
@@ -115,14 +117,11 @@ export default function Projects() {
                         </ul>
                     </div>
                     <div>
-                        <ul className="flex-row-start">
+                        <ul className="flex-row-end">
                             <li><a href="https://github.com/mar69287/little-learners" target="_blank"><i className="fa-brands fa-github"></i></a></li>
                             <li><a className="demo" href="https://littlelearners.herokuapp.com/" target="_blank">Demo</a></li>
                         </ul>
                     </div>
-                </div>
-                <div className="project-image">
-                    <img src={little} alt="Project Image" />
                 </div>
             </div >
             {/* <div data-aos='fade-up' className="project-content">
