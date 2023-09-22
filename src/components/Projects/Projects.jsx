@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import little from '../../assets/little-learners.jpg'
 import insight from '../../assets/insight-home.jpg'
 import tiendamaya from '../../assets/tienda-maya.jpg'
+import devconnect from '../../assets/devconnect.jpg'
 
 export default function Projects() {
     useEffect(() => {
@@ -38,7 +39,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="project-image">
-                    <img src={insight} alt="Project Image" />
+                    <img src={devconnect} alt="Project Image" />
                 </div>
             </div >
             <div data-aos='fade-up' className="project-content">
