@@ -32,8 +32,8 @@ export default function Projects() {
                     </div>
                     <div>
                         <ul className="flex-row-start">
-                            <li><a href="https://github.com/mar69287/InSight" target="_blank"><i className="fa-brands fa-github"></i></a></li>
-                            <li><a className="demo" href="https://insight-official.herokuapp.com/" target="_blank">Demo</a></li>
+                            <li><a href="https://github.com/mar69287/devConnect/tree/main" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                            <li><a className="demo" href="https://devconnect-social-d5ad076571e6.herokuapp.com/" target="_blank">Demo</a></li>
                         </ul>
                     </div>
                 </div>
